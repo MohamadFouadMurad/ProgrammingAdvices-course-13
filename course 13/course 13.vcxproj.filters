@@ -13,5 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\01-Project-1">
+      <UniqueIdentifier>{f7ca3a0e-e83f-4c0b-9b0f-8ed1d250a3bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="01-Project-1\01-requirements and solutions.cpp">
+      <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
