@@ -256,4 +256,48 @@ public:
 		}
 		*/
 	}
+
+	void Reverse()
+	{
+		Node* temp = nullptr;
+		Node* current = head;
+
+		while (current != nullptr)
+		{
+			temp = current->prev;
+			current->prev = current->next;
+			current->next = temp;
+
+			current = current->prev;
+		}
+
+		if (head != nullptr)
+		{
+			head = temp->prev;
+		}
+	}
+
+	Node * GetNode(int Index)
+	{
+		if (Index < 0 || Index > _Size - 1)
+		{
+			return nullptr;
+		}
+
+		Node* current = head;
+		int counter = 0;
+
+		while (current != nullptr)
+		{
+			if (counter == Index)
+			{
+				return current;
+			}
+
+			counter++;
+			current = current->next;
+		}
+
+		return nullptr;
+	}
 };

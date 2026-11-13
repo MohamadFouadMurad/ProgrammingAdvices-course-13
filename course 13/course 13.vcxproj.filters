@@ -33,6 +33,12 @@
     <ClCompile Include="01-Project-1\04-Extension 3 - solution.cpp">
       <Filter>Source Files\01-Project-1</Filter>
     </ClCompile>
+    <ClCompile Include="01-Project-1\05-Extension 4 - solution.cpp">
+      <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
+    <ClCompile Include="01-Project-1\06-Extension 5 - solution.cpp">
+      <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
