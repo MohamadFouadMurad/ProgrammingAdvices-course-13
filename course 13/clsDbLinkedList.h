@@ -18,6 +18,7 @@ public:
 
 protected:
 	Node* head = nullptr;
+	int _Size = 0;
 
 public:
 
@@ -34,28 +35,29 @@ public:
 	void InsertAtBeginning(T Value)
 	{
 		Node* new_node = new Node();
-		new_node->prev = NULL;
+		new_node->prev = nullptr;
 		new_node->Value = Value;
-		new_node->next = NULL;
+		new_node->next = nullptr;
 
-		if (head == NULL)
+		if (head == nullptr)
 		{
 			head = new_node;
-			new_node->prev = NULL;
+			new_node->prev = nullptr;
+			_Size++;
 			return;
 		}
 
 		new_node->next = head;
 		head->prev = new_node;
 		head = new_node;
-
+		_Size++;
 	}
 
 	void PrintList()
 	{
 		Node* current = head;
 
-		while (current != NULL)
+		while (current != nullptr)
 		{
 			cout << current->Value << "  ";
 			current = current->next;
@@ -68,7 +70,7 @@ public:
 	{
 		Node* current = head;
 
-		while (current != NULL)
+		while (current != nullptr)
 		{
 			if (current->Value == Value)
 			{
@@ -78,22 +80,22 @@ public:
 			current = current->next;
 		}
 
-		return NULL;
+		return nullptr;
 	}
 
 	void InsertAfter(Node* current, T Value)
 	{
-		if (current == NULL)
+		if (current == nullptr)
 		{
 			return;
 		}
 
 		Node* new_node = new Node();
-		new_node->prev = NULL;
-		new_node->next = NULL;
+		new_node->prev = nullptr;
+		new_node->next = nullptr;
 		new_node->Value = Value;
 
-		if (current->next != NULL)
+		if (current->next != nullptr)
 		{
 			current->next->prev = new_node;
 		}
@@ -101,6 +103,7 @@ public:
 		new_node->next = current->next;
 		new_node->prev = current;
 		current->next = new_node;
+		_Size++;
 	}
 
 	void InsertAtEnd(T Value)
@@ -108,29 +111,31 @@ public:
 		Node* new_node = new Node();
 		new_node->Value = Value;
 
-		if (head == NULL)
+		if (head == nullptr)
 		{
 			new_node->next = head;
-			new_node->prev = NULL;
+			new_node->prev = nullptr;
 			head = new_node;
+			_Size++;
 			return;
 		}
 
 		Node* current = head;
 
-		while (current->next != NULL)
+		while (current->next != nullptr)
 		{
 			current = current->next;
 		}
 
-		new_node->next = NULL;
+		new_node->next = nullptr;
 		new_node->prev = current;
 		current->next = new_node;
+		_Size++;
 	}
 
 	void DeleteNode(Node*& NodeToDelete)
 	{
-		if (head == NULL || NodeToDelete == NULL)
+		if (head == nullptr || NodeToDelete == nullptr)
 		{
 			return;
 		}
@@ -140,23 +145,24 @@ public:
 			head = NodeToDelete->next;
 		}
 
-		if (NodeToDelete->next != NULL)
+		if (NodeToDelete->next != nullptr)
 		{
 			NodeToDelete->next->prev= NodeToDelete->prev;
 		}
 
-		if (NodeToDelete->prev != NULL)
+		if (NodeToDelete->prev != nullptr)
 		{
 			NodeToDelete->prev->next = NodeToDelete->next;
 		}
 
 		delete NodeToDelete;
-		NodeToDelete = NULL;
+		NodeToDelete = nullptr;
+		_Size--;
  	}
 
 	void DeleteFirstNode()
 	{
-		if (head == NULL)
+		if (head == nullptr)
 		{
 			return;
 		}
@@ -164,38 +170,67 @@ public:
 		Node* current = head;
 		head = head->next;
 		
-		if (head != NULL)
+		if (head != nullptr)
 		{
-			head->prev = NULL;
+			head->prev = nullptr;
 		}
 
 		delete current;
+		_Size--;
 	}
 
 	void DeleteLastNode()
 	{
-		if (head == NULL)
+		if (head == nullptr)
 		{
 			return;
 		}
 
-		if (head->next == NULL)
+		if (head->next == nullptr)
 		{
 			delete head;
-			head = NULL;
+			head = nullptr;
+			_Size--;
 			return;
 		}
 
 		Node* current = head;
 
-		while (current->next != NULL)
+		while (current->next != nullptr)
 		{
 			current = current->next;
 		}
 
-		current->prev->next = NULL;
+		current->prev->next = nullptr;
 		delete current;
+		_Size--;
+	}
 
+	int Size()
+	{
+		/*  O(N)
+		int counter = 0;
+
+		Node* current = head;
+
+		while (current != nullptr)
+		{
+			counter++;
+			current = current->next;
+		}
+
+		return counter;
+		*/
+
+		// O(1)
+		return _Size;
+	}
+
+	bool IsEmpty()
+	{
+		return (_Size == 0 ? true : false);
+
+		// Another way
+		//return head == nullptr;
 	}
 };
-
