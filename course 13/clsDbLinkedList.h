@@ -30,6 +30,11 @@ public:
 			head = head->next;
 			delete temp;
 		}
+
+
+
+		// after extension 3 you can do this 
+		//Clear();
 	}
 
 	void InsertAtBeginning(T Value)
@@ -231,6 +236,24 @@ public:
 		return (_Size == 0 ? true : false);
 
 		// Another way
-		//return head == nullptr;
+		//return (head == nullptr);
+	}
+
+	void Clear()
+	{
+		int number = _Size;
+
+		for (int i = 0; i < number; i++)
+		{
+			DeleteFirstNode();
+		}
+
+		//Better way
+		/*
+		while(_Size > 0)
+		{
+			DeleteFirstNode();
+		}
+		*/
 	}
 };

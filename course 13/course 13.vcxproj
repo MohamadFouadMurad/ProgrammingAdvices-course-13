@@ -22,10 +22,13 @@
     <ClCompile Include="01-Project-1\01-requirements and solutions.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="01-Project-1\02-Extension 1 - requirement.cpp">
+    <ClCompile Include="01-Project-1\02-Extension 1 -  solution.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="01-Project-1\03-Extension 2 - requirement.cpp">
+    <ClCompile Include="01-Project-1\03-Extension 2 - solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="01-Project-1\04-Extension 3 - solution.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
