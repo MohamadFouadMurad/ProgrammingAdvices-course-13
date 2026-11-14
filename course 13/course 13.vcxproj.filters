@@ -19,6 +19,9 @@
     <Filter Include="Header Files\DS">
       <UniqueIdentifier>{9b50aa16-b78e-4137-8826-111eba593835}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\02-Project-2">
+      <UniqueIdentifier>{222ff26b-cf5e-4ce3-9b3b-e655194d7610}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\01-requirements and solutions.cpp">
@@ -43,6 +46,9 @@
       <Filter>Source Files\01-Project-1</Filter>
     </ClCompile>
     <ClCompile Include="01-Project-1\08-Extension 7- solution.cpp">
+      <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
+    <ClCompile Include="01-Project-1\09-Extension 8 - solution.cpp">
       <Filter>Source Files\01-Project-1</Filter>
     </ClCompile>
   </ItemGroup>

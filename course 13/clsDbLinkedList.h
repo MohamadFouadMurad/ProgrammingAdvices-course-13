@@ -325,4 +325,17 @@ public:
 		current->Value = NewValue;
 		return true;
 	}
+
+	bool InsertAfter(int Index,T NewValue)
+	{
+		Node* current = GetNode(Index);
+
+		if (current==nullptr)
+		{
+			return false;
+		}
+
+		InsertAfter(current, NewValue);
+		return true;
+	}
 };
