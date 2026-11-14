@@ -312,4 +312,17 @@ public:
 
 		return ItemNode->Value;
 	}
+
+	bool UpdateItem(int Index,T NewValue)
+	{
+		Node* current = GetNode(Index);
+
+		if (current == nullptr)
+		{
+			return false;
+		}
+
+		current->Value = NewValue;
+		return true;
+	}
 };
