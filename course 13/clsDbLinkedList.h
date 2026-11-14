@@ -300,4 +300,16 @@ public:
 
 		return nullptr;
 	}
+
+	T GetItem(int Index)
+	{
+		Node* ItemNode = GetNode(Index);
+
+		if (ItemNode == nullptr)
+		{
+			return T();
+		}
+
+		return ItemNode->Value;
+	}
 };

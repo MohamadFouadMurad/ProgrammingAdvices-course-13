@@ -39,6 +39,9 @@
     <ClCompile Include="01-Project-1\06-Extension 5 - solution.cpp">
       <Filter>Source Files\01-Project-1</Filter>
     </ClCompile>
+    <ClCompile Include="01-Project-1\07-Extension 6 - solution.cpp">
+      <Filter>Source Files\01-Project-1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
