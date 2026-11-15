@@ -51,9 +51,15 @@
     <ClCompile Include="01-Project-1\09-Extension 8 - solution.cpp">
       <Filter>Source Files\01-Project-1</Filter>
     </ClCompile>
+    <ClCompile Include="02-Project-2\01-Requirements and solution.cpp">
+      <Filter>Source Files\02-Project-2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
+      <Filter>Header Files\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMyQueue.h">
       <Filter>Header Files\DS</Filter>
     </ClInclude>
   </ItemGroup>

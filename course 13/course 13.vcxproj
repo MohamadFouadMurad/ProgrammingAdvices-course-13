@@ -43,10 +43,14 @@
     <ClCompile Include="01-Project-1\08-Extension 7- solution.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="01-Project-1\09-Extension 8 - solution.cpp" />
+    <ClCompile Include="01-Project-1\09-Extension 8 - solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="02-Project-2\01-Requirements and solution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h" />
+    <ClInclude Include="clsMyQueue.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
