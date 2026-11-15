@@ -51,5 +51,43 @@ public:
 		return  _MyList.GetItem(Size() -1);
 	}
 
+	T GetItem(int Index)
+	{
+		return _MyList.GetItem(Index);
+	}
+
+	void Reverse()
+	{
+		_MyList.Reverse();
+	}
+
+	bool UpdateItem(int Index, T NewValue)
+	{
+		return _MyList.UpdateItem(Index,NewValue);
+	}
+
+	bool InsertAfter(int Index, T NumToAdd)
+	{
+		return _MyList.InsertAfter(Index,NumToAdd);
+	}
+
+	void InsertAtFront(T Value)
+	{
+		_MyList.InsertAtBeginning(Value);
+	}
+
+	void InsertAtBack(T Value)
+	{
+		push(Value);
+
+
+		//or
+		//_MyList.InsertAtEnd(Value);
+	}
+
+	void clear()
+	{
+		_MyList.Clear();
+	}
 };
 

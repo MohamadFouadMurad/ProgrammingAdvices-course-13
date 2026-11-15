@@ -54,6 +54,9 @@
     <ClCompile Include="02-Project-2\01-Requirements and solution.cpp">
       <Filter>Source Files\02-Project-2</Filter>
     </ClCompile>
+    <ClCompile Include="02-Project-2\02-Extensions 1 to 7.cpp">
+      <Filter>Source Files\02-Project-2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
