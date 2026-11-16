@@ -52,10 +52,12 @@
     <ClCompile Include="02-Project-2\02-Extensions 1 to 7.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="03-Project-3\01-requirement and solution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h" />
     <ClInclude Include="clsMyQueue.h" />
+    <ClInclude Include="clsMyStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

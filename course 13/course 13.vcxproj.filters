@@ -22,6 +22,9 @@
     <Filter Include="Source Files\02-Project-2">
       <UniqueIdentifier>{222ff26b-cf5e-4ce3-9b3b-e655194d7610}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\03-Project-3">
+      <UniqueIdentifier>{bd06262a-ba4c-4ed4-ba98-cc507ba6214b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\01-requirements and solutions.cpp">
@@ -57,12 +60,18 @@
     <ClCompile Include="02-Project-2\02-Extensions 1 to 7.cpp">
       <Filter>Source Files\02-Project-2</Filter>
     </ClCompile>
+    <ClCompile Include="03-Project-3\01-requirement and solution.cpp">
+      <Filter>Source Files\03-Project-3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
       <Filter>Header Files\DS</Filter>
     </ClInclude>
     <ClInclude Include="clsMyQueue.h">
+      <Filter>Header Files\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMyStack.h">
       <Filter>Header Files\DS</Filter>
     </ClInclude>
   </ItemGroup>
