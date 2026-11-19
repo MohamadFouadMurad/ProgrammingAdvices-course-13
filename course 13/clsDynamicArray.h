@@ -64,7 +64,31 @@ public:
 		// _OrgArray[i] === *(_OrgArray + i)
 	}
 
+	void ReSize(int NewSize)
+	{
+		if (NewSize < 0)
+		{
+			NewSize = 0;
+		}
 
+		if (NewSize == _Size)
+		{
+			return;
+		}
+
+		T* TempArray = new T[NewSize];
+
+		for (int i = 0; i < _Size && i < NewSize; i++)
+		{
+			TempArray[i] = _OrgArray[i];
+		}
+
+		_Size = NewSize;
+
+		delete[] _OrgArray;
+
+		_OrgArray = TempArray;
+	}
 
 };
 

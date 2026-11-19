@@ -55,7 +55,10 @@
     <ClCompile Include="03-Project-3\01-requirement and solution.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="04-Project-4\01-reqirement and solution.cpp" />
+    <ClCompile Include="04-Project-4\01-reqirement and solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="04-Project-4\02-Extension 1 - solution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h" />
