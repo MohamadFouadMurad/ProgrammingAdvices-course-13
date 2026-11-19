@@ -25,6 +25,9 @@
     <Filter Include="Source Files\03-Project-3">
       <UniqueIdentifier>{bd06262a-ba4c-4ed4-ba98-cc507ba6214b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\04-Project-4">
+      <UniqueIdentifier>{b40f1599-85ad-4899-bfe8-5b11cfb03994}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\01-requirements and solutions.cpp">
@@ -63,6 +66,9 @@
     <ClCompile Include="03-Project-3\01-requirement and solution.cpp">
       <Filter>Source Files\03-Project-3</Filter>
     </ClCompile>
+    <ClCompile Include="04-Project-4\01-reqirement and solution.cpp">
+      <Filter>Source Files\04-Project-4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
@@ -72,6 +78,9 @@
       <Filter>Header Files\DS</Filter>
     </ClInclude>
     <ClInclude Include="clsMyStack.h">
+      <Filter>Header Files\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="clsDynamicArray.h">
       <Filter>Header Files\DS</Filter>
     </ClInclude>
   </ItemGroup>

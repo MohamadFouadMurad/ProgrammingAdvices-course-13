@@ -52,10 +52,14 @@
     <ClCompile Include="02-Project-2\02-Extensions 1 to 7.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="03-Project-3\01-requirement and solution.cpp" />
+    <ClCompile Include="03-Project-3\01-requirement and solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="04-Project-4\01-reqirement and solution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h" />
+    <ClInclude Include="clsDynamicArray.h" />
     <ClInclude Include="clsMyQueue.h" />
     <ClInclude Include="clsMyStack.h" />
   </ItemGroup>
