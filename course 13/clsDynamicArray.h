@@ -90,5 +90,59 @@ public:
 		_OrgArray = TempArray;
 	}
 
+	T GetItem(int Index)
+	{
+		if (Index < 0 || Index >= _Size)
+		{
+			return T();
+		}
+
+		return _OrgArray[Index];
+	}
+
+	void Reverse()
+	{
+		T* TempArray = new T[_Size];
+
+		for (int Index = 0; Index < _Size; Index++)
+		{
+			TempArray[Index] = _OrgArray[_Size - Index - 1];
+		}
+
+		//Another way
+		/*
+		T Temp;
+		for (int i = 0; i < _Size /2; i++)
+		{
+			Temp = _OrgArray[i];
+			_OrgArray[i] = _OrgArray[_Size - i - 1];
+			_OrgArray[_Size - i - 1] = Temp;
+		}
+		*/
+
+		delete[] _OrgArray;
+
+		_OrgArray = TempArray;
+	}
+
+	void Clear()
+	{
+		 ReSize(0);
+
+		 //Another way
+		/*
+		if (_Size == 0)
+		{
+		return;
+		}
+
+		delete[] _OrgArray;
+
+		_Size = 0;
+
+		_OrgArray = new T[0];
+		*/
+	}
+
 };
 
