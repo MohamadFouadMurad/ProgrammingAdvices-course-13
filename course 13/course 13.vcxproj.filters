@@ -75,6 +75,15 @@
     <ClCompile Include="04-Project-4\03-Extensions 2,3,4 - solution.cpp">
       <Filter>Source Files\04-Project-4</Filter>
     </ClCompile>
+    <ClCompile Include="04-Project-4\04-Extension 5 - solution.cpp">
+      <Filter>Source Files\04-Project-4</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-4\05-Extensions 6,7 - solution.cpp">
+      <Filter>Source Files\04-Project-4</Filter>
+    </ClCompile>
+    <ClCompile Include="04-Project-4\06-Extensions 8,9 - solution.cpp">
+      <Filter>Source Files\04-Project-4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">

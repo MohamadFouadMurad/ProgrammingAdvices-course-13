@@ -144,5 +144,71 @@ public:
 		*/
 	}
 
+	void DeleteItemAt(int Index)
+	{
+		if (Index < 0 || Index >= _Size)
+		{
+			return;
+		}
+
+		_Size--;
+		T* TempArray = new T[_Size];
+
+		for (int i = 0; i < _Size; i++)
+		{
+			if (i < Index)
+			{
+				TempArray[i] = _OrgArray[i];
+			}
+			else
+			{
+				TempArray[i] = _OrgArray[i + 1];
+			}
+		}
+
+		delete[] _OrgArray;
+
+		_OrgArray = TempArray;
+	}
+
+	void DeleteFirstItem()
+	{
+		if (_Size == 0)
+		{
+			return;
+		}
+
+		DeleteItemAt(0);
+	}
+
+	void DeleteLastItem()
+	{
+		if (_Size == 0)
+		{
+			return;
+		}
+
+		DeleteItemAt(_Size - 1);
+	}
+
+	int Find(T Value)
+	{
+		for (int i = 0; i < _Size; i++)
+		{
+			if (_OrgArray[i] == Value)
+			{
+				return i;
+			}
+		}
+
+		return -1;
+	}
+
+	void DeleteItem(T Value)
+	{
+		int Index = Find(Value);
+
+		DeleteItemAt(Index);
+	}
 };
 
