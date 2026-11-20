@@ -1,0 +1,33 @@
+#include <iostream>
+#include "../clsDynamicArray.h"
+using namespace std;
+
+int main()
+{
+
+	clsDynamicArray <int> MyDynamicArray(5);
+
+	MyDynamicArray.SetItem(0, 10);
+	MyDynamicArray.SetItem(1, 20);
+	MyDynamicArray.SetItem(2, 30);
+	MyDynamicArray.SetItem(3, 40);
+	MyDynamicArray.SetItem(4, 50);
+
+	cout << "\nIs Empty? " << MyDynamicArray.IsEmpty();
+	cout << "\nArray Size: " << MyDynamicArray.Size();
+	cout << "\n\nArray Items: \n";
+
+	MyDynamicArray.PrintList();
+
+	MyDynamicArray.DeleteFirstItem();
+	cout << "\n\nArray Size: " << MyDynamicArray.Size();
+	cout << "\nArray After Deleting First Item: \n";
+	MyDynamicArray.PrintList();
+
+
+	MyDynamicArray.DeleteLastItem();
+	cout << "\n\nArray Size: " << MyDynamicArray.Size();
+	cout << "\nArray After Deleting Last Item: \n";
+	MyDynamicArray.PrintList();
+}
+
