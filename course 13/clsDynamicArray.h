@@ -276,5 +276,28 @@ public:
 		return true;
 		*/
 	}
+
+	bool InsertAtBeginning(T Value)
+	{
+		return InsertAt(0, Value);
+	}
+
+	bool InsertBefore(int Index, T Value)
+	{
+		if (Index == 0)
+			return 	InsertAt(0, Value);
+		else
+			return 	InsertAt(Index-1,Value);
+	}
+
+	bool InsertAfter(int Index, T Value)
+	{
+		return InsertAt(Index + 1, Value);
+	}
+
+	bool InsertAtEnd(T Value)
+	{
+		return 	InsertAt(_Size, Value);
+	}
 };
 
