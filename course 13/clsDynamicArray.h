@@ -210,5 +210,71 @@ public:
 
 		DeleteItemAt(Index);
 	}
+
+	bool InsertAt(int Index, T value)
+	{
+		if (Index < 0 || Index > _Size)
+		{
+			return false;
+		}
+
+		_Size++;
+		T* TempArray = new T[_Size];
+
+		for (int i = 0; i < _Size; i++)
+		{
+			if (i == Index)
+			{
+				TempArray[i] = value;
+			}
+			else
+			{
+				if (i < Index)
+				{
+					TempArray[i] = _OrgArray[i];
+				}
+				else
+				{
+					TempArray[i] = _OrgArray[i-1];
+				}
+			}
+		}
+
+		delete[] _OrgArray;
+
+		_OrgArray = TempArray;
+		return true;
+
+
+		//Another way
+		/*
+		if (Index > _Size || Index < 0)
+		{
+			return false;
+		}
+
+		_Size++;
+
+		T * TempArray = new T[_Size];
+
+		//copy all before index
+		for (int i = 0; i < Index; i++)
+		{
+			TempArray[i] = _OrgArray[i];
+		}
+
+		TempArray[Index] = value;
+
+		//copy all after index
+		for (int i = Index; i < _Size - 1; i++)
+		{
+			TempArray[i + 1] = _OrgArray[i];
+		}
+
+		delete[] _OrgArray;
+		_OrgArray = TempArray;
+		return true;
+		*/
+	}
 };
 
