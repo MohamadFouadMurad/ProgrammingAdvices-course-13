@@ -76,12 +76,18 @@
     <ClCompile Include="04-Project-4\07-Extension 10 - solution.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="04-Project-4\08-Extension 11,12,13,14 - solution.cpp" />
+    <ClCompile Include="04-Project-4\08-Extension 11,12,13,14 - solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="05-Project-5\01-requirement and solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h" />
     <ClInclude Include="clsDynamicArray.h" />
     <ClInclude Include="clsMyQueue.h" />
+    <ClInclude Include="clsMyQueueArr.h" />
     <ClInclude Include="clsMyStack.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
