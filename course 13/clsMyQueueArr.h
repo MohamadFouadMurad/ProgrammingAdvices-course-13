@@ -7,38 +7,38 @@ template <class T>
 class clsMyQueueArr
 {
 protected:
-	clsDynamicArray <T> _MyArray;
+	clsDynamicArray <T> _MyList;
 
 public:
 	
 	void push(T Value)
 	{
-		_MyArray.InsertAtEnd(Value);
+		_MyList.InsertAtEnd(Value);
 	}
 
 	void pop()
 	{
-		_MyArray.DeleteFirstItem();
+		_MyList.DeleteFirstItem();
 	}
 
 	void Print()
 	{
-		_MyArray.PrintList();
+		_MyList.PrintList();
 	}
 
 	int Size()
 	{
-		return _MyArray.Size();
+		return _MyList.Size();
 	}
 
 	bool IsEmpty()
 	{
-		return _MyArray.IsEmpty();
+		return _MyList.IsEmpty();
 	}
 
 	T front()
 	{
-		return 	_MyArray.GetItem(0);
+		return 	_MyList.GetItem(0);
 	}
 
 	T back()
@@ -48,32 +48,32 @@ public:
 			return T();
 		}
 
-		return  _MyArray.GetItem(Size() - 1);
+		return  _MyList.GetItem(Size() - 1);
 	}
 
 	T GetItem(int Index)
 	{
-		return _MyArray.GetItem(Index);
+		return _MyList.GetItem(Index);
 	}
 
 	void Reverse()
 	{
-		_MyArray.Reverse();
+		_MyList.Reverse();
 	}
 
 	bool UpdateItem(int Index, T NewValue)
 	{
-		return _MyArray.SetItem(Index, NewValue);
+		return _MyList.SetItem(Index, NewValue);
 	}
 
 	bool InsertAfter(int Index, T NumToAdd)
 	{
-		return _MyArray.InsertAfter(Index, NumToAdd);
+		return _MyList.InsertAfter(Index, NumToAdd);
 	}
 
 	void InsertAtFront(T Value)
 	{
-		_MyArray.InsertAtBeginning(Value);
+		_MyList.InsertAtBeginning(Value);
 	}
 
 	void InsertAtBack(T Value)
@@ -82,12 +82,12 @@ public:
 
 
 		//or
-		//_MyArray.InsertAtEnd(Value);
+		//_MyList.InsertAtEnd(Value);
 	}
 
 	void clear()
 	{
-		_MyArray.Clear();
+		_MyList.Clear();
 	}
 };
 
