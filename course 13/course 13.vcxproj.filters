@@ -34,6 +34,12 @@
     <Filter Include="Source Files\06-Project-6">
       <UniqueIdentifier>{1fdb23df-e1cd-4809-ae3a-887288c79db8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\07-Project-7">
+      <UniqueIdentifier>{4ea9c621-55ec-4a8b-ad72-f70b5dbaf7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\08-Project-8">
+      <UniqueIdentifier>{8b29e632-d143-4d22-8df8-ec83df6dae19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="01-Project-1\01-requirements and solutions.cpp">
@@ -102,6 +108,9 @@
     <ClCompile Include="06-Project-6\01-requirement and solution.cpp">
       <Filter>Source Files\06-Project-6</Filter>
     </ClCompile>
+    <ClCompile Include="07-Project-7\01-requirement and solution.cpp">
+      <Filter>Source Files\07-Project-7</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
@@ -120,6 +129,9 @@
       <Filter>Header Files\DS</Filter>
     </ClInclude>
     <ClInclude Include="clsMyStackArr.h">
+      <Filter>Header Files\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="clsMyString.h">
       <Filter>Header Files\DS</Filter>
     </ClInclude>
   </ItemGroup>
