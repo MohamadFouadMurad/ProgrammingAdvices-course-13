@@ -85,9 +85,13 @@
     <ClCompile Include="06-Project-6\01-requirement and solution.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="07-Project-7\01-requirement and solution.cpp" />
+    <ClCompile Include="07-Project-7\01-requirement and solution.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="08-Project-8\01-requirement and solution.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clsDate.h" />
     <ClInclude Include="clsDbLinkedList.h" />
     <ClInclude Include="clsDynamicArray.h" />
     <ClInclude Include="clsMyQueue.h" />
@@ -95,6 +99,8 @@
     <ClInclude Include="clsMyStack.h" />
     <ClInclude Include="clsMyStackArr.h" />
     <ClInclude Include="clsMyString.h" />
+    <ClInclude Include="clsQueueLine.h" />
+    <ClInclude Include="clsString.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

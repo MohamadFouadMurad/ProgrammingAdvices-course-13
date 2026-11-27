@@ -111,6 +111,9 @@
     <ClCompile Include="07-Project-7\01-requirement and solution.cpp">
       <Filter>Source Files\07-Project-7</Filter>
     </ClCompile>
+    <ClCompile Include="08-Project-8\01-requirement and solution.cpp">
+      <Filter>Source Files\08-Project-8</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h">
@@ -133,6 +136,15 @@
     </ClInclude>
     <ClInclude Include="clsMyString.h">
       <Filter>Header Files\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="clsQueueLine.h">
+      <Filter>Header Files\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="clsDate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsString.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
